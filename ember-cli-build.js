@@ -7,6 +7,31 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  // css
+  app.import('vendor/css/animate.min.css');
+  app.import('vendor/css/bootstrap.min.css');
+  app.import('vendor/css/font-awesome.css');
+  app.import('vendor/css/font-awesome.min.css');
+  app.import('vendor/css/main.css');
+  app.import('vendor/css/prettyPhoto.css');
+  app.import('vendor/css/responsive.css');
+
+  // fonts
+  app.import('vendor/fonts/fontawesome-webfont.ttf');
+  app.import('vendor/fonts/FontAwesome.otf');
+  app.import('vendor/fonts/glyphicons-halflings-regular.ttf');
+
+  // javascript
+  app.import('vendor/js/bootstrap.min.js');
+  app.import('vendor/js/html5shiv.js');
+  app.import('vendor/js/jquery.isotope.min.js');
+  app.import('vendor/js/jquery.js');
+  app.import('vendor/js/jquery.prettyPhoto.js');
+  app.import('vendor/js/main.js');
+  app.import('vendor/js/respond.min.js');
+  app.import('vendor/js/wow.min.js');
+
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

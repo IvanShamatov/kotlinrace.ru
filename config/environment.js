@@ -16,6 +16,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    
+    i18n: {
+      defaultLocale: 'ru'
     }
   };
 
@@ -39,9 +43,22 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
   }
 
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self' 'unsafe-eval' 'unsafe-inline' https://mc.yandex.ru http://mc.yandex.ru",
+    'font-src': "'self'",
+    'connect-src': "'self'",
+    'img-src': "'self' https://mc.yandex.ru",
+    'style-src': "'self' 'unsafe-inline'",
+    'media-src': "'self'"
+  }
+
   if (environment === 'production') {
 
   }
+
+
+
 
   return ENV;
 };
